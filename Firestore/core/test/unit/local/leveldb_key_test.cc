@@ -727,7 +727,7 @@ TEST(LevelDbDocumentOverlayKeyTest, EncodeDecodeCycle) {
 
 TEST(LevelDbDocumentOverlayKeyTest, Description) {
   AssertExpectedKeyDescription(
-      "[document_overlays: user_id=foo-bar?baz!quux path=coll/doc "
+      "[document_overlays: user_id=foo-bar?baz!quux path=coll/doc break "
       "batch_id=123]",
       LevelDbDocumentOverlayKey::Key("foo-bar?baz!quux",
                                      testutil::Key("coll/doc"), 123));
